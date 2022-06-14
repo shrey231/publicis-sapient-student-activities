@@ -1,0 +1,41 @@
+
+* {
+    margin: 5px;
+}
+.top_borders {
+    border-color: red;
+    width:500px;
+    height: 40px;
+    border-style: solid;
+    
+
+}
+.left_borders{
+    border-color: red;
+    width: 50px;
+    height: 300px;
+    border-style: solid;
+}
+.middle_borders {
+    border-color: red;
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+
+}
+.right_borders {
+    border-color: red;
+    width: 50px;
+    height: 300px;
+    border-style: solid;
+
+}
+.bottom_borders {
+    border-color: red;
+    width:500px;
+    height: 40px;
+    border-style: solid;
+    
+
+}
+
