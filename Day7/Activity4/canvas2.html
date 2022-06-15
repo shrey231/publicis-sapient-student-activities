@@ -14,15 +14,16 @@
 
   <script type="text/javascript">
     let ctx = document.getElementById("c1").getContext('2d');
-
-    for(let i = 0; i < 8; i++){
-        for(let j = 0; j < 8; j++) {
-            if((i + j) % 2 != 0){
-                ctx.fillRect(50*j ,50*i ,50,50)
-            } 
-        }
+    let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+    let stepSize = 25;
+    
+    for(let i = 0; i < 7; i++) {
+        ctx.beginPath();   
+        ctx.arc(200,200,stepSize,0,Math.PI,true);
+        stepSize = stepSize - 5;
+        ctx.fillStyle = colors[i];
+        ctx.fill();
     }
-
   </script>
 
 
