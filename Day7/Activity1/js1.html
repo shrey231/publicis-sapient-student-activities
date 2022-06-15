@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <input type="text" id="i1">
+    <br/>
+    <button onclick="handleClick(event)">My Button</button>
+    <p onclick="handleClick(event)">Paragraph</p>
+    <div id="i2">Name is: </div>
+    <script type="text/javascript">
+        function handleClick(e){
+            let ele = document.getElementById("i1");
+            let ele2 = document.getElementById("i2");
+            
+            ele2.innerHTML = ele2.innerHTML + '<b>'+ele.value+'</b>';
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

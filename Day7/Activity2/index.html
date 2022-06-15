@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body <div class="form">
+    <h1>Form</h1>
+
+    <form name="login" method="post" onsubmit="return handleSubmit()">
+        First Name <input type="text" name="firstname" /> <br />
+        Last Name<input type="text" name="lastname" /> <br />
+        Gender
+        M
+        <input type="radio" id="gender" name="gender" value="M" <input />
+        F
+        <input type="radio" id="gender" name="gender" value="F" <input />
+        <br />
+
+
+        Password
+        <input type="password" name="password" />
+        <br />
+
+        Confirm Password
+        <input type="password" name="confirm_password" />
+        <br />
+        Skills:
+
+        C
+        <input type="checkbox" name="Cs" value="C" <input />
+
+        Java
+        <input type="checkbox" name="Java" value="Java" <input />
+
+        JS
+        <input type="checkbox" name="JSs" value="JavaScript" <input />
+        <br />
+        <input type="submit" value="Register">
+        <input type="reset">
+
+
+
+    </form>
+
+    <script type="text/javascript">
+        function handleSubmit() {
+            let loginForm = document.login;
+            let first = loginForm.firstname;
+            let last = loginForm.lastname;
+            let gender = loginForm.gender;
+            let pass = loginForm.password;
+            let confirm = loginForm.confirm_password;
+            let c = loginForm.Cs;
+            let java = loginForm.Java;
+            let js = loginForm.JSs;
+
+            if (first.value.length < 3) {
+                alert("First Name less than 3 characters");
+                return false;
+            }
+            if (last.value.length < 2) {
+                alert("Last Name less than 2 characters");
+                return false;
+            }
+            if(gender.value == ''){
+                alert("Gender not selected");
+                return false;
+            }
+            if(pass.value != confirm.value){
+                alert("Passwords do not match");
+                return false;
+            }
+            if(c.checked == false && java.checked == false && js.checked == false){
+                alert("Skills not selected");
+                return false;
+
+            }
+
+            return true;
+        }
+    </script>
+
+
+
+    </div>
+
+</body>
+
+</html>

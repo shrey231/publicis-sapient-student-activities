@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <button onclick="handleClick">Change Color</button>
+    <div>
+        <button onclick="addColor('red')">Red</button>
+        <button onclick="addColor('orange')">Orange</button>
+        <button onclick="addColor('green')">Green</button>
+    </div>
+    <h2 id="i1">Hello World!</h2>
+    <script type="text/javascript">
+        function handleClick(e){
+            let ele = document.getElementById('i1');
+            ele.style.color = 'blue';
+
+        }
+        
+        function addColor(e){
+            let ele = document.getElementById('i1');
+            ele.style.color = e;
+        }
+    </script>
+
+
+
+</body>
+
+</html>
